@@ -15,6 +15,8 @@ The game should be built to iOS to play, it requires use of the accelerometer to
 
 For testing in game view you can use [Unity Remote 4](https://itunes.apple.com/gb/app/unity-remote-4/id871767552?mt=8).
 
+Shake device to reset.
+
 ####Feature ideas
 
 * **Timer** *add countdown to create immediacy*
