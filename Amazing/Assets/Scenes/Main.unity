@@ -586,6 +586,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &1842077036 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 161798, guid: cf8851af6a197487794049e0e857b07a, type: 2}
+  m_PrefabInternal: {fileID: 323159524}
+--- !u!114 &1842077040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842077036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c0d966055684c3b8a7c1bfbc752313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accelerometerUpdateInterval: 0.016666668
+  lowPassKernelWidthInSeconds: 1
+  shakeDetectionThreshold: 2
+  lowPassFilterFactor: 0
 --- !u!1 &1911449549
 GameObject:
   m_ObjectHideFlags: 0
