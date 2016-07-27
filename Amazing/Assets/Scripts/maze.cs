@@ -50,11 +50,14 @@ public class maze : MonoBehaviour {
 		myPos = initialPos;
 		GameObject tempWall;
 
+		Color newColor = new Color(Random.Range(0.0f, 1.0f),Random.Range(0.0f, 1.0f),Random.Range(0.0f, 1.0f),1);
+
 		// For x Axis
 		for(int i = 0; i <ySize; i++){
 			for (int j = 0; j <= xSize; j++) {
 				myPos = new Vector3 (initialPos.x + (j * wallLength) - wallLength / 2, 0.0f, initialPos.z + (i * wallLength) - wallLength / 2);
 				tempWall = Instantiate (wall, myPos, Quaternion.identity) as GameObject;
+				tempWall.GetComponent<MeshRenderer>().material.SetColor("_Color",newColor);
 				tempWall.transform.parent = wallHolder.transform;
 			}
 		}
@@ -64,6 +67,7 @@ public class maze : MonoBehaviour {
 			for (int j = 0; j < xSize; j++) {
 				myPos = new Vector3 (initialPos.x + (j * wallLength), 0.0f, initialPos.z + (i * wallLength) - wallLength);
 				tempWall = Instantiate (wall, myPos, Quaternion.Euler(0.0f,90f,0.0f)) as GameObject;
+				tempWall.GetComponent<MeshRenderer>().material.SetColor("_Color",newColor);
 				tempWall.transform.parent = wallHolder.transform;
 			}
 		}
