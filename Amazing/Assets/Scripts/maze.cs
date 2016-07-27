@@ -18,8 +18,6 @@ public class maze : MonoBehaviour {
 	public int xSize = 5;
 	public int ySize = 5;
 
-	public float scaler = 1.0f;
-
 	private Vector3 initialPos;
 	private Vector3 myPos;
 	private GameObject wallHolder;
@@ -236,12 +234,5 @@ public class maze : MonoBehaviour {
 		finishHolder = Instantiate (finish, endPos, Quaternion.identity) as GameObject;
 	}
 
-	// Update is called once per frame
-	void Update () {
-		
-//		Rotate the world ipad - testing
-//		Vector3 worldRotation = new Vector3 (Input.acceleration.x * scaler, 0, Input.acceleration.y * scaler);
-//		world.transform.Rotate (worldRotation);
-	
-	}
+
 }
