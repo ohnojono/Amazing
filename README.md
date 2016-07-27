@@ -13,6 +13,8 @@ A maze style game was initially chosen as a starting point to learn Unity and th
 ####Control
 The game should be built to iOS to play, it requires use of the accelerometer to control the player/ball.
 
+For testing in game view you can use [Unity Remote 4](https://itunes.apple.com/gb/app/unity-remote-4/id871767552?mt=8).
+
 ####Feature ideas
 
 * **Timer** *add countdown to create immediacy*
